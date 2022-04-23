@@ -1,0 +1,197 @@
+
+.Welcome-Container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.welcome-bg {
+  background: white;
+  height: 100%;
+  width: 50%;
+}
+.welcome-bg img {
+  width: 100%;
+}
+.meet-us {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 25vh;
+ 
+  /* align-items: flex-end; */
+}
+
+.cards {
+  margin: 0 auto 0 auto;
+  animation-duration: 2s;
+  animation-iteration-count: unset;
+  transform-origin: bottom;
+  /* border: 1px solid black; */
+  width: 33%;
+  /* background: rgba(255, 255, 255, 0.288); */
+  height: auto;
+  transition: 0.5s linear;
+  animation-name: bounce-1;
+  animation-timing-function: linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.cards:hover {
+  /* box-shadow: rgba(255, 255, 255, 0.63) 2px 2px 2px 2px; */
+  cursor: pointer;
+  /* border-end-end-radius:15%;
+  border-bottom-left-radius:15%; */
+
+  transform: translateY(-150px)
+}
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(-450px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.iTitle {
+  font-size: 100px;
+}
+
+.cards img {
+  border-radius: 70%;
+  width: 50%;
+  height: 35%;
+}
+
+/* .cards h2{ */
+  /* border-top: 1px white solid;
+  border-bottom: 1px white solid; */
+
+/* } */
+
+.inside-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  margin-top: 2vh;
+  
+}
+.contact-icons a{
+  color: rgba(243, 243, 243, 0.89);
+  /* border: 2px solid rgba(182, 63, 19, 0.829); */
+  /* border-radius: 50%; */
+  margin: 10px;
+  transition: 1s !important;
+  text-decoration: none;
+  font-size: 100%;
+}
+.icon:hover{
+  font-size: 50px;
+}
+
+.siteBtn{
+  width: 13vw;
+  height: 5vh;
+  background-image: linear-gradient(180deg, #2158fdbb, #a6bcfd);
+ border-radius: 10ch;
+ font-size: larger;
+ transition:1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.siteBtn:hover{
+width: 15vw;
+cursor: pointer;
+}
+
+ @media only screen and (max-width:1024px) {
+  .cards img{
+    width: 55%;
+    height: 25%;
+}
+.cards h2{
+  font-size: large;
+}
+.iTitle {
+  font-size: 80px;
+}
+.siteBtn{
+  font-size: smaller;
+ }
+ .welcome-bg img{
+   margin-top: 20vh;
+ }
+}
+
+@media only screen and (max-width: 767.98px){
+  .Welcome-Container{
+    flex-direction: column-reverse;
+    width: fit-content;
+    height: fit-content;
+
+  }
+  .welcome-bg{
+    width: 100%;
+    height: 50%;
+
+  }
+  .meet-us{
+    width: 100%;
+    height: 50%;
+    margin-top:10vh;
+  }
+  .cards .icon h2{
+   font-size: smaller;
+  }
+  
+  .cards img{
+    height: 50%;
+  }
+
+
+  .welcome-bg img{
+    margin-top: 0;
+  }
+  .siteBtn{
+    font-size: smaller;
+    width: 25vw;
+   }
+   .iTitle {
+    font-size: 60px;
+  }
+
+}
+@media only screen and (max-width: 500px) {
+  .welcome-bg{
+    width: 100%;
+    height: 50vh;
+
+  }
+
+  .welcome-bg img{
+   height: 40vh;
+
+  }
+  
+  .meet-us{
+  display: flex;
+  flex-direction: column;
+  }
+  .siteBtn{
+    font-size: smaller;
+    width: 30vw;
+   }
+}
+

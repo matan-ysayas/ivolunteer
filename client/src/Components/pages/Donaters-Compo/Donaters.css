@@ -1,0 +1,76 @@
+.donation-header{
+  font-size: 90px;
+  color: rgba(255, 192, 203, 0.74);
+  text-shadow: black 20px 20px 20px ;
+  height: 30vh;
+}
+.donation-form-header{
+  margin-top: 15vh;
+  font-size: 70px;
+  color: rgba(255, 192, 203, 0.74);
+
+  text-shadow: black 20px 20px 20px ;
+}
+.tableCell:hover {
+  background-color: rgba(137, 43, 226, 0.472);
+  cursor: pointer;
+}
+.tableCell{
+  font-size: xx-large;
+}
+.donatersContainer {
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-x:auto;
+}
+
+.AddDonaterForm {
+  margin-bottom: 10vh;
+  text-align: center;
+}
+.delete-btn {
+  font-size: large;
+  transition: 0.5s;
+}
+.delete-btn:hover {
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+
+.the-form {
+  
+  border: "1px solid black";
+  text-align: "center";
+  width: 600px;
+  height: 600px;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh ;
+    background-image: url(../../../../public/Media/Regi-BG.jpg);
+    background-position: center;
+    border-radius: 7ch;
+}
+
+.donatorsInputs {
+font-size: xx-large!important;
+
+}
+
+.the-form button{
+background:white;
+border-radius: 10ch;
+font-family: "Montserrat Alternates", sans-serif!important;
+width: 9vw;
+
+font-weight: 800;
+}
+
+.donatorTable{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+

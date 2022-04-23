@@ -1,0 +1,60 @@
+.Popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.733);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Popup-inner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color:rgba(255, 255, 255, 0.911);
+    border:solid rgb(0, 0, 0) 5px;
+    border-radius: 5%;
+}
+
+.Popup-inner .close-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    
+}
+.Popup-inner p{
+    margin-top: 20px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight:bolder ;
+}   
+img{
+    width: 250px;
+}
+
+.PopupTimer-inner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 520px;
+    border-radius: 5%;
+}
+
+.PopupTimer-inner .TimerClose-btn{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.TimerClose-btn{
+    color: white;
+    cursor: pointer;
+
+} 
+
+
+
+
